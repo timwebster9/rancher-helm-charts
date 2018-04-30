@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: builditdigital/jenkins-image
-  tag: 1.0.9-alpine
+  tag: 2.2.0-alpine
   pullPolicy: IfNotPresent
 service:
   name: buildit-jenkins
