@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "fullname" . }}
+data:
+  JENKINS_CONFIG_FILE: {{ .Values.configMap.jenkinsConfigUrl }}
+  JAVA_OPTS: {{ .Values.configMap.javaOpts }}
